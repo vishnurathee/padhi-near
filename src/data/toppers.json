@@ -1,0 +1,77 @@
+[
+  {
+    "id": "anaya",
+    "name": "Anaya",
+    "result": "Class 10 · 98%",
+    "focus": "Science and Mathematics",
+    "intro": "I'm Anaya. I don't do magic. Three questions from one chapter every day, and a notebook of mistakes on Sunday. Ask me.",
+    "replies": [
+      {
+        "q": "Should I study late at night, or in the morning?",
+        "a": "Whichever time you can keep every day is the better one. I did 90 minutes of new questions in the morning and 40 minutes at night going over that day's mistakes. A long night made less of it stick."
+      },
+      {
+        "q": "How do I stop silly mistakes in mathematics?",
+        "a": "At the end of a solution I read two things out loud: what was asked, and what the unit is. Half the marks were saved right there. Start a new question only after the last one has been checked properly."
+      },
+      {
+        "q": "I can't get through the whole syllabus.",
+        "a": "First do the chapters a question comes from every year. Make a short note of the rest and leave them. Don't let a strong chapter go weak just so you can say you finished."
+      },
+      {
+        "q": "What should I do in the week before the board exam?",
+        "a": "No new textbook. Only your mistake notebook, the formula page, and one sample paper done to time. Cutting down on sleep does not improve the paper."
+      }
+    ]
+  },
+  {
+    "id": "vihaan",
+    "name": "Vihaan",
+    "result": "Class 12 · PCM 97%",
+    "focus": "Physics and Mathematics",
+    "intro": "Vihaan. I learn a derivation by saying it aloud at the end — the meaning comes first. Before I memorise a derivation, I always solve one numerical.",
+    "replies": [
+      {
+        "q": "Derivations won't stay in my head.",
+        "a": "Close the book and tell someone, in five lines, why the first step is there. The step you cannot explain is the one you only memorised. Write it again from the meaning, then memorise it."
+      },
+      {
+        "q": "I get stuck on numericals.",
+        "a": "Given, required, formula, unit. I write those four lines before the working. Half the times I am stuck, it clears up right there, because I never get as far as picking the wrong formula."
+      },
+      {
+        "q": "I run out of time in mocks.",
+        "a": "First do the questions that take about two minutes. Mark a long one and move on. The last twelve minutes are only for the ones you left, and for checking units."
+      },
+      {
+        "q": "How should I revise?",
+        "a": "One page for each chapter: the formula, one trap, and one easy question. Write the page yourself. A photocopy you have only read does not stay in your head."
+      }
+    ]
+  },
+  {
+    "id": "meher",
+    "name": "Meher",
+    "result": "Class 12 · Commerce 96%",
+    "focus": "Accountancy and Economics",
+    "intro": "Meher. I don't match ledger entries by colour. I match them by the rule. After every entry I ask: who gives, and who receives.",
+    "replies": [
+      {
+        "q": "I get confused with journal entries.",
+        "a": "Split the sentence in two. Whoever is giving up value is credited; whoever is receiving it is debited. Say an example out loud, then write it. Don't jump straight to the name of the account."
+      },
+      {
+        "q": "How do I write a long theory answer?",
+        "a": "A definition in the first line, then three points, and a short example at the end. The examiner is looking for the heading and the example. Don't write the same point three times."
+      },
+      {
+        "q": "The figures in economics get tangled.",
+        "a": "Beside the formula, write the unit and one sentence on what will rise. For example, if the fiscal deficit rises, borrowing rises. The direction does not stick unless there is a number with it."
+      },
+      {
+        "q": "What loses marks most often when a script is checked?",
+        "a": "An answer with no working shown, and a missing heading on the format. In accountancy the format is half the marks. I write the name of the account before the answer."
+      }
+    ]
+  }
+]

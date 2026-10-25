@@ -1,0 +1,2525 @@
+{
+  "classes": {
+    "10": {
+      "id": "10",
+      "title": "Class 10th",
+      "badge": "High School",
+      "hindi": "Class 10",
+      "blurb": "Concepts, practice, and sample papers — board prep in one place.",
+      "poster": "/posters/class-10.jpg",
+      "tone": "cyan"
+    },
+    "12": {
+      "id": "12",
+      "title": "Class 12th",
+      "badge": "Higher Secondary",
+      "hindi": "Class 12",
+      "blurb": "Concepts, topper habits, and sample papers for science, commerce, and arts.",
+      "poster": "/posters/class-12.jpg",
+      "tone": "violet"
+    }
+  },
+  "streams": [
+    {
+      "id": "science",
+      "name": "Science",
+      "blurb": "Physics, chemistry, maths, biology"
+    },
+    {
+      "id": "commerce",
+      "name": "Commerce",
+      "blurb": "Accounts, business, economics"
+    },
+    {
+      "id": "arts",
+      "name": "Arts",
+      "blurb": "History, politics, geography"
+    }
+  ],
+  "subjects": {
+    "10": [
+      {
+        "id": "maths",
+        "name": "Mathematics",
+        "blurb": "Real numbers, polynomials, quadratics, and triangles",
+        "hindi": "Mathematics",
+        "chapters": [
+          {
+            "id": "real-numbers",
+            "title": "Real Numbers",
+            "summary": "Use Euclid’s division lemma and prime factorisation to find HCF and LCM, and spot irrational numbers.",
+            "formula": "a = bq + r,  0 ≤ r < b    ·    HCF(a, b) × LCM(a, b) = a × b",
+            "points": [
+              "Euclid’s division lemma: for positive integers a > b there are unique integers q and r such that a = bq + r and the remainder r is smaller than the divisor b.",
+              "Repeating that process (the Euclid algorithm) makes the last non-zero remainder the HCF.",
+              "Fundamental theorem of arithmetic: every composite number can be written as a product of primes in one way, apart from order.",
+              "√2, √3, and √5 are irrational. The sum or product of two irrationals can still be rational, for example √2 × √8 = 4."
+            ],
+            "questions": [
+              {
+                "prompt": "In a = bq + r, what is the range of r?",
+                "choices": [
+                  "0 ≤ r < b",
+                  "0 < r ≤ b",
+                  "r ≥ b",
+                  "r = b always"
+                ],
+                "answer": 0,
+                "why": "The remainder is smaller than the divisor, and it may be zero."
+              },
+              {
+                "prompt": "What is the HCF of 12 and 18?",
+                "choices": [
+                  "2",
+                  "3",
+                  "6",
+                  "36"
+                ],
+                "answer": 2,
+                "why": "12 = 2²×3 and 18 = 2×3², so the common prime powers give 2×3 = 6."
+              },
+              {
+                "prompt": "Which of these is irrational?",
+                "choices": [
+                  "0.25",
+                  "22/7",
+                  "√16",
+                  "√2"
+                ],
+                "answer": 3,
+                "why": "√16 = 4 is rational. √2 cannot be written as p/q."
+              }
+            ]
+          },
+          {
+            "id": "polynomials",
+            "title": "Polynomials",
+            "summary": "How zeroes relate to coefficients, and how to divide polynomials.",
+            "formula": "For ax² + bx + c with zeroes α, β:  α + β = −b/a,  αβ = c/a",
+            "points": [
+              "A zero of p(x) is a value where p(x) = 0. A linear polynomial has one zero. A quadratic has at most two.",
+              "If α and β are the zeroes, the quadratic can be built as x² − (α+β)x + αβ.",
+              "Division algorithm: p(x) = g(x)·q(x) + r(x), and the degree of r is less than the degree of g.",
+              "On a graph, the zeroes are the x-coordinates where the curve crosses the x-axis."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the sum of the zeroes of x² − 5x + 6?",
+                "choices": [
+                  "6",
+                  "5",
+                  "−5",
+                  "1"
+                ],
+                "answer": 1,
+                "why": "Sum = −b/a = 5. The zeroes are 2 and 3."
+              },
+              {
+                "prompt": "If the zeroes are 2 and −3, what is their product?",
+                "choices": [
+                  "−6",
+                  "6",
+                  "−1",
+                  "5"
+                ],
+                "answer": 0,
+                "why": "αβ = 2 × (−3) = −6, which equals c/a."
+              },
+              {
+                "prompt": "What do we call a polynomial of degree 3?",
+                "choices": [
+                  "Linear",
+                  "Quadratic",
+                  "Cubic",
+                  "Constant"
+                ],
+                "answer": 2,
+                "why": "Degree 1 is linear, degree 2 quadratic, degree 3 cubic."
+              }
+            ]
+          },
+          {
+            "id": "quadratic",
+            "title": "Quadratic Equations",
+            "summary": "Solve ax² + bx + c = 0 by factoring or the formula, and use the discriminant to describe the roots.",
+            "formula": "x = [−b ± √(b² − 4ac)] / 2a    ·    D = b² − 4ac",
+            "points": [
+              "A quadratic equation has the form ax² + bx + c = 0, with a ≠ 0.",
+              "Discriminant D = b² − 4ac. D > 0 means two distinct real roots, D = 0 means two equal roots, D < 0 means no real roots.",
+              "To factor, split the middle term into two terms whose product is a·c and whose sum is b.",
+              "In word problems, define the variable, form the equation, then reject roots that do not fit, such as a negative length."
+            ],
+            "questions": [
+              {
+                "prompt": "What are the roots of x² − 5x + 6 = 0?",
+                "choices": [
+                  "1 and 6",
+                  "2 and 3",
+                  "−2 and −3",
+                  "5 and 6"
+                ],
+                "answer": 1,
+                "why": "(x−2)(x−3) = 0, so x = 2 or x = 3."
+              },
+              {
+                "prompt": "What kind of discriminant does 2x² + 3x + 5 = 0 have?",
+                "choices": [
+                  "Positive",
+                  "Zero",
+                  "Negative",
+                  "1"
+                ],
+                "answer": 2,
+                "why": "D = 9 − 40 = −31 < 0, so there is no real root."
+              },
+              {
+                "prompt": "If D = 0, what are the roots like?",
+                "choices": [
+                  "Two distinct real roots",
+                  "No real roots",
+                  "Two equal real roots",
+                  "Three roots"
+                ],
+                "answer": 2,
+                "why": "The repeated root is x = −b/2a."
+              }
+            ]
+          },
+          {
+            "id": "triangles",
+            "title": "Triangles",
+            "summary": "Similar triangles, the basic proportionality theorem, and Pythagoras.",
+            "formula": "BPT: AD/DB = AE/EC    ·    In a right triangle, hypotenuse² = base² + height²",
+            "points": [
+              "Two triangles are similar when corresponding angles are equal and corresponding sides are proportional. The tests are AAA, SSS, and SAS.",
+              "Thales / BPT: a line drawn parallel to one side of a triangle divides the other two sides in the same ratio.",
+              "The ratio of the areas of two similar triangles equals the ratio of the squares of corresponding sides.",
+              "Pythagoras applies to a right triangle. The converse is also true: if a² + b² = c², the angle is a right angle."
+            ],
+            "questions": [
+              {
+                "prompt": "When does BPT apply?",
+                "choices": [
+                  "Any line",
+                  "A line parallel to one side",
+                  "Only a median",
+                  "Only an altitude"
+                ],
+                "answer": 1,
+                "why": "The line must be parallel to one side of the triangle."
+              },
+              {
+                "prompt": "What kind of triangle has sides 3, 4, and 5?",
+                "choices": [
+                  "Acute",
+                  "Right-angled",
+                  "Obtuse",
+                  "Equilateral"
+                ],
+                "answer": 1,
+                "why": "3² + 4² = 9 + 16 = 25 = 5², so it is right-angled."
+              },
+              {
+                "prompt": "The ratio of areas of similar triangles equals what?",
+                "choices": [
+                  "The ratio of sides",
+                  "The ratio of the squares of sides",
+                  "The ratio of perimeters",
+                  "The ratio of angles"
+                ],
+                "answer": 1,
+                "why": "Area is proportional to (corresponding side)²."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "science",
+        "name": "Science",
+        "blurb": "Reactions, acids and bases, life processes, and electricity",
+        "hindi": "Science",
+        "chapters": [
+          {
+            "id": "reactions",
+            "title": "Chemical Reactions",
+            "summary": "Combination, decomposition, displacement, double displacement, and oxidation-reduction.",
+            "formula": "Combination: A + B → AB    ·    Decomposition: AB → A + B",
+            "points": [
+              "A chemical reaction makes new substances. Signs include a colour change, a gas, a precipitate, or a temperature change.",
+              "In combination, two or more substances join into one. In decomposition, one substance breaks into two or more, often with heat, light, or electricity.",
+              "In displacement, a more reactive element pushes a less reactive one out of its compound. In double displacement, ions swap, as in BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl.",
+              "Rusting and rancidity of food are slow oxidations. Keeping oily food airtight slows rancidity."
+            ],
+            "questions": [
+              {
+                "prompt": "What type of reaction is CaO + H₂O → Ca(OH)₂?",
+                "choices": [
+                  "Decomposition",
+                  "Combination",
+                  "Displacement",
+                  "Double displacement"
+                ],
+                "answer": 1,
+                "why": "Two reactants join to give one product."
+              },
+              {
+                "prompt": "Rusting of iron is mainly what?",
+                "choices": [
+                  "Reduction only",
+                  "Oxidation",
+                  "Neutralisation",
+                  "Precipitation"
+                ],
+                "answer": 1,
+                "why": "Iron reacts with oxygen and moisture to form an oxide."
+              },
+              {
+                "prompt": "In a double displacement, BaSO₄ forming is a sign of what?",
+                "choices": [
+                  "A gas",
+                  "A white precipitate",
+                  "Heat only",
+                  "Light"
+                ],
+                "answer": 1,
+                "why": "Barium sulfate is a white precipitate, almost insoluble in water."
+              }
+            ]
+          },
+          {
+            "id": "acids",
+            "title": "Acids, Bases and Salts",
+            "summary": "The pH scale, neutralisation, and salts used in daily life.",
+            "formula": "Acid + base → salt + water    ·    pH < 7 acidic, 7 neutral, > 7 basic",
+            "points": [
+              "Acids turn blue litmus red. Bases turn red litmus blue. Indicators change colour with pH.",
+              "In neutralisation, H⁺ and OH⁻ join to make water, and a salt is left.",
+              "Tooth decay speeds up when the mouth’s pH falls below 5.5. An alkaline toothpaste neutralises the acid.",
+              "Baking soda is NaHCO₃, washing soda is Na₂CO₃·10H₂O, and plaster of Paris is CaSO₄·½H₂O."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the pH of pure water, about?",
+                "choices": [
+                  "1",
+                  "5.5",
+                  "7",
+                  "14"
+                ],
+                "answer": 2,
+                "why": "At 25°C pure water is neutral, pH 7."
+              },
+              {
+                "prompt": "What is HCl + NaOH → NaCl + H₂O called?",
+                "choices": [
+                  "Decomposition",
+                  "Neutralisation",
+                  "Corrosion",
+                  "Hydrogenation"
+                ],
+                "answer": 1,
+                "why": "An acid and a base make a salt and water."
+              },
+              {
+                "prompt": "Tooth decay speeds up below which pH?",
+                "choices": [
+                  "7",
+                  "8.5",
+                  "5.5",
+                  "14"
+                ],
+                "answer": 2,
+                "why": "Enamel starts dissolving in acid when pH drops below 5.5."
+              }
+            ]
+          },
+          {
+            "id": "life",
+            "title": "Life Processes",
+            "summary": "Nutrition, respiration, transport, and excretion — four processes that keep life going.",
+            "formula": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂  (light, chlorophyll)",
+            "points": [
+              "Autotrophic plants make food by photosynthesis. Chlorophyll absorbs light, and CO₂ enters through stomata.",
+              "In aerobic respiration, glucose breaks down with oxygen and releases a lot of energy. Anaerobic respiration releases less energy and makes lactic acid or ethanol.",
+              "The human heart has four chambers. Double circulation keeps oxygenated and deoxygenated blood apart.",
+              "The working unit of the kidney is the nephron. It filters out wastes such as urea and reabsorbs useful water and salts."
+            ],
+            "questions": [
+              {
+                "prompt": "What gas is produced in photosynthesis?",
+                "choices": [
+                  "Carbon dioxide",
+                  "Nitrogen",
+                  "Oxygen",
+                  "Hydrogen"
+                ],
+                "answer": 2,
+                "why": "The reaction releases oxygen and makes glucose."
+              },
+              {
+                "prompt": "How many chambers does the human heart have?",
+                "choices": [
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                "answer": 2,
+                "why": "Two atria and two ventricles — four chambers."
+              },
+              {
+                "prompt": "What is the working unit of the kidney?",
+                "choices": [
+                  "Neuron",
+                  "Nephron",
+                  "Alveolus",
+                  "Stoma"
+                ],
+                "answer": 1,
+                "why": "The nephron filters blood and makes urine."
+              }
+            ]
+          },
+          {
+            "id": "electricity",
+            "title": "Electricity",
+            "summary": "Ohm’s law, series and parallel circuits, and electric power.",
+            "formula": "V = IR    ·    P = VI = I²R    ·    Series: R = R₁ + R₂",
+            "points": [
+              "Current is the rate of flow of charge. The SI unit is the ampere. One ampere is one coulomb per second.",
+              "Ohm’s law: at constant temperature, V is proportional to I in a metallic conductor. Resistance R = V/I, in ohms.",
+              "In series, the current is the same and resistances add. In parallel, the voltage is the same and 1/R = 1/R₁ + 1/R₂.",
+              "Household circuits are parallel so each appliance gets the same voltage and the others keep working if one fails. A fuse melts on excess current and protects the circuit."
+            ],
+            "questions": [
+              {
+                "prompt": "What current does a 12 V battery send through a 3 Ω resistor?",
+                "choices": [
+                  "36 A",
+                  "4 A",
+                  "0.25 A",
+                  "9 A"
+                ],
+                "answer": 1,
+                "why": "I = V/R = 12/3 = 4 A."
+              },
+              {
+                "prompt": "Two 2 Ω resistors in parallel have what equivalent resistance?",
+                "choices": [
+                  "4 Ω",
+                  "2 Ω",
+                  "1 Ω",
+                  "0 Ω"
+                ],
+                "answer": 2,
+                "why": "1/R = 1/2 + 1/2 = 1, so R = 1 Ω."
+              },
+              {
+                "prompt": "Which power relation is correct?",
+                "choices": [
+                  "P = I/V",
+                  "P = VI",
+                  "P = V/I",
+                  "P = R/I"
+                ],
+                "answer": 1,
+                "why": "P = VI. It can also be written as I²R or V²/R."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "name": "Social Science",
+        "blurb": "Nationalism, resources, democracy, and credit",
+        "hindi": "Social Science",
+        "chapters": [
+          {
+            "id": "nationalism",
+            "title": "Nationalism in India",
+            "summary": "Gandhi’s mass movements — from Non-Cooperation to Quit India.",
+            "formula": "",
+            "points": [
+              "The 1919 Rowlatt Act and the Jallianwala Bagh massacre sharpened protest. Gandhi linked Khilafat and swaraj and started Non-Cooperation in 1920.",
+              "Non-Cooperation asked people to leave government schools, courts, foreign cloth, and titles. The movement was withdrawn after the Chauri Chaura violence in 1922.",
+              "The 1930 Dandi March became the symbol of breaking the salt law. Civil Disobedience meant breaking laws peacefully.",
+              "The Quit India resolution was passed on 8 August 1942. The call was “Do or Die”. After the leaders were arrested, the movement spread among the people."
+            ],
+            "questions": [
+              {
+                "prompt": "In which year did the Dandi March begin?",
+                "choices": [
+                  "1919",
+                  "1922",
+                  "1930",
+                  "1942"
+                ],
+                "answer": 2,
+                "why": "Gandhi walked from Sabarmati to Dandi on 12 March 1930."
+              },
+              {
+                "prompt": "What immediately caused the Non-Cooperation Movement to be withdrawn?",
+                "choices": [
+                  "Jallianwala Bagh",
+                  "Chauri Chaura",
+                  "Simon Commission",
+                  "Cripps Mission"
+                ],
+                "answer": 1,
+                "why": "In February 1922 a crowd turned violent at Chauri Chaura."
+              },
+              {
+                "prompt": "“Do or Die” belongs to which movement?",
+                "choices": [
+                  "Non-Cooperation",
+                  "Civil Disobedience",
+                  "Quit India",
+                  "Swadeshi"
+                ],
+                "answer": 2,
+                "why": "It was the slogan of the 1942 Quit India Movement."
+              }
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Resources and Development",
+            "summary": "How resources are classified, why we plan them, and types of soil.",
+            "formula": "",
+            "points": [
+              "A resource must meet a human need, be technically accessible, economically workable, and culturally acceptable.",
+              "By origin: biotic and abiotic. By exhaustibility: renewable and non-renewable. By ownership: individual, community, national, and international.",
+              "Resources in India are unevenly spread, so planning is needed: identify, plan, and monitor.",
+              "Alluvial soil in river plains is fertile. Black (regur) soil is known for cotton and holds moisture. Laterite forms by leaching in heavy rain."
+            ],
+            "questions": [
+              {
+                "prompt": "Which soil is considered best for cotton?",
+                "choices": [
+                  "Alluvial",
+                  "Black",
+                  "Laterite",
+                  "Desert"
+                ],
+                "answer": 1,
+                "why": "The black regur soil of the Deccan is famous for cotton."
+              },
+              {
+                "prompt": "Solar energy belongs to which class?",
+                "choices": [
+                  "Non-renewable",
+                  "Renewable",
+                  "Only biotic",
+                  "Human-made"
+                ],
+                "answer": 1,
+                "why": "Energy from the sun keeps arriving, so it is renewable."
+              },
+              {
+                "prompt": "Why is resource planning necessary?",
+                "choices": [
+                  "Resources are infinite",
+                  "Distribution is uneven and misuse must be limited",
+                  "Only for export",
+                  "Only for cities"
+                ],
+                "answer": 1,
+                "why": "Limited and uneven resources need planned, sustainable use."
+              }
+            ]
+          },
+          {
+            "id": "democracy",
+            "title": "Democracy",
+            "summary": "What democracy means, its features, and its outcomes.",
+            "formula": "",
+            "points": [
+              "Democracy is a government in which the people choose the rulers. Decisions sit with elected representatives.",
+              "Free and fair elections, adult franchise, one person one vote, and the rule of law are the minimum conditions.",
+              "Democracy can take time to decide, but it gives debate and legitimacy. The opposition and civil rights check it.",
+              "Expected outcomes: accountable government, respect for equality, peaceful handling of conflict, and dignity. Economic growth is not automatic, but hunger and inequality can be argued about."
+            ],
+            "questions": [
+              {
+                "prompt": "What is a basic condition of democracy?",
+                "choices": [
+                  "A hereditary king",
+                  "Elected rulers and fair elections",
+                  "The army alone",
+                  "Appointment by one party"
+                ],
+                "answer": 1,
+                "why": "Rulers must be chosen in free and fair elections."
+              },
+              {
+                "prompt": "“One person, one vote” expresses which idea?",
+                "choices": [
+                  "Equal political worth",
+                  "A guarantee of economic equality",
+                  "Hereditary privilege",
+                  "Censorship"
+                ],
+                "answer": 0,
+                "why": "Every adult citizen’s vote is treated as having the same political weight."
+              },
+              {
+                "prompt": "Why does democracy not guarantee economic growth?",
+                "choices": [
+                  "It is only a political system",
+                  "It has no elections",
+                  "It has no laws",
+                  "It is a dictatorship"
+                ],
+                "answer": 0,
+                "why": "Growth depends on many factors. Democracy gives accountability, not automatic growth."
+              }
+            ]
+          },
+          {
+            "id": "money",
+            "title": "Money and Credit",
+            "summary": "Money as a medium of exchange, formal and informal loans, and self-help groups.",
+            "formula": "",
+            "points": [
+              "Barter needs a double coincidence of wants. Money solves that by acting as a medium of exchange and a measure of value.",
+              "In India, rupee notes are issued by the Reserve Bank of India. The one-rupee note is issued by the Ministry of Finance. Currency is legal tender.",
+              "Formal credit comes from banks and cooperatives, watched by the RBI. Informal credit comes from moneylenders and traders, often at a high interest rate.",
+              "Self-help groups link poor people, especially women, to small savings and loans without heavy collateral. That can open a path into formal banking."
+            ],
+            "questions": [
+              {
+                "prompt": "Which difficulty of barter does money remove?",
+                "choices": [
+                  "The need for a double coincidence of wants",
+                  "A language barrier",
+                  "Transport",
+                  "Climate"
+                ],
+                "answer": 0,
+                "why": "Both sides no longer need to want each other’s goods at the same moment."
+              },
+              {
+                "prompt": "Who mainly issues currency notes in India?",
+                "choices": [
+                  "Any bank",
+                  "Reserve Bank of India",
+                  "State governments",
+                  "Moneylenders"
+                ],
+                "answer": 1,
+                "why": "The RBI is the central bank, and note issue is its job."
+              },
+              {
+                "prompt": "What is a common drawback of informal loans?",
+                "choices": [
+                  "Very low interest",
+                  "High interest and weak oversight",
+                  "Strict RBI inspection",
+                  "A bank branch only"
+                ],
+                "answer": 1,
+                "why": "Moneylender credit is often expensive and outside regulation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "english",
+        "name": "English",
+        "blurb": "Prose, poetry, and the points worth writing in an exam",
+        "hindi": "English",
+        "chapters": [
+          {
+            "id": "letter-to-god",
+            "title": "A Letter to God",
+            "summary": "Lencho’s faith, a crop destroyed by hail, and the quiet help of the post-office staff.",
+            "formula": "",
+            "points": [
+              "Lencho is a hardworking farmer. A hailstorm destroys his crop. He writes to God and asks for a hundred pesos.",
+              "The postman laughs at the letter, but the postmaster is moved by Lencho’s faith. The staff collect money and send it — not the full amount.",
+              "Lencho thinks the staff stole some of the money. He writes a second letter to God: send the rest, but not through the post office.",
+              "The irony: the faith we admire is what makes him suspect the very people who helped him. In an exam, name that irony plainly."
+            ],
+            "questions": [
+              {
+                "prompt": "Who did Lencho write the letter to?",
+                "choices": [
+                  "The postmaster",
+                  "God",
+                  "The bank",
+                  "His neighbours"
+                ],
+                "answer": 1,
+                "why": "He addresses God. The post office is only the channel."
+              },
+              {
+                "prompt": "Why did the postmaster collect the money?",
+                "choices": [
+                  "The law forced him",
+                  "He did not want to break Lencho’s faith",
+                  "Crop insurance",
+                  "To win a prize"
+                ],
+                "answer": 1,
+                "why": "He does not want to hurt that faith, and he contributes himself."
+              },
+              {
+                "prompt": "What is the irony of the story?",
+                "choices": [
+                  "It never rained",
+                  "Lencho accuses the people who helped him of theft",
+                  "The letter never arrived",
+                  "The crop survived"
+                ],
+                "answer": 1,
+                "why": "The helpers are called a “bunch of crooks”. That is the sharp irony."
+              }
+            ]
+          },
+          {
+            "id": "mandela",
+            "title": "Nelson Mandela: Long Walk to Freedom",
+            "summary": "The 10 May 1994 inauguration and the long fight against apartheid.",
+            "formula": "",
+            "points": [
+              "Mandela was sworn in as South Africa’s first Black president on 10 May 1994. It was the public end of apartheid.",
+              "Apartheid separated people by race. Laws gave privilege to white people and restrictions to Black people.",
+              "Mandela names two obligations: one to family and community, and a larger one to free his people from injustice. The first is incomplete without the second.",
+              "Courage is not the absence of fear. It is victory over fear. Freedom is indivisible — the oppressor is also locked in a chain of hate."
+            ],
+            "questions": [
+              {
+                "prompt": "Mandela’s presidential oath is tied to which date?",
+                "choices": [
+                  "10 May 1994",
+                  "15 August 1947",
+                  "2 October 1869",
+                  "26 January 1950"
+                ],
+                "answer": 0,
+                "why": "The opening scene of the chapter is 10 May 1994."
+              },
+              {
+                "prompt": "What does apartheid mean?",
+                "choices": [
+                  "Equal voting rights",
+                  "A policy of separation by race",
+                  "A parliamentary election",
+                  "Free trade"
+                ],
+                "answer": 1,
+                "why": "It was South Africa’s system of racial separation."
+              },
+              {
+                "prompt": "According to Mandela, real courage is what?",
+                "choices": [
+                  "Having no fear",
+                  "Overcoming fear",
+                  "Avoiding a fight",
+                  "Strength alone"
+                ],
+                "answer": 1,
+                "why": "The brave person is not someone who never fears, but someone who conquers fear."
+              }
+            ]
+          },
+          {
+            "id": "fire-ice",
+            "title": "Fire and Ice",
+            "summary": "Robert Frost’s short poem: the world might end from desire or from hate.",
+            "formula": "",
+            "points": [
+              "The poet sets two familiar endings side by side: fire and ice. He links fire to desire and ice to hate.",
+              "The opening lines say some people expect the world to end in fire. From what he knows of desire, the poet agrees.",
+              "If the world had to perish twice, ice / hate would also be enough. Hatred is as destructive as greed.",
+              "The poem is only nine lines. In an exam, name the symbols: fire = uncontrolled desire, ice = cold hatred. Both are human faults, not only natural disasters."
+            ],
+            "questions": [
+              {
+                "prompt": "In the poem, fire is a symbol of what?",
+                "choices": [
+                  "Rain",
+                  "Desire",
+                  "Peace",
+                  "Forgiveness"
+                ],
+                "answer": 1,
+                "why": "Frost treats desire as something that can burn the world down."
+              },
+              {
+                "prompt": "Ice is linked to which feeling?",
+                "choices": [
+                  "Love",
+                  "Hate",
+                  "Hope",
+                  "Courage"
+                ],
+                "answer": 1,
+                "why": "Cold hatred can freeze relationships and a civilisation."
+              },
+              {
+                "prompt": "What is the poet’s conclusion?",
+                "choices": [
+                  "Only fire is dangerous",
+                  "Hate is also enough to destroy",
+                  "The world will never end",
+                  "Ice is always greater than desire"
+                ],
+                "answer": 1,
+                "why": "“Ice is also great” — hate can bring the end too."
+              }
+            ]
+          },
+          {
+            "id": "thief",
+            "title": "The Thief's Story",
+            "summary": "Hari Singh and Anil — theft, trust, and a decision to change.",
+            "formula": "",
+            "points": [
+              "Fifteen-year-old Hari Singh is a thief. He asks Anil for work. Anil is a writer with an irregular income, and he teaches Hari to read, write, and cook.",
+              "One night Hari steals the rupees under Anil’s mattress and runs. At the station, in the crowd and the rain, he stops.",
+              "He sees that the money could make him a bigger thief, but he would lose his education. Losing Anil’s trust makes him regret it.",
+              "He returns the wet notes. In the morning Anil sees they are damp and says nothing — a quiet forgiveness. The story shows change through a relationship, not a sermon."
+            ],
+            "questions": [
+              {
+                "prompt": "Why does Hari Singh stay with Anil?",
+                "choices": [
+                  "A high salary",
+                  "An easy theft, and later the pull of learning",
+                  "Fear of the police on day one",
+                  "He is Anil’s brother"
+                ],
+                "answer": 1,
+                "why": "At first Anil looks like an easy target. Later, the lessons hold Hari there."
+              },
+              {
+                "prompt": "Why does he put the stolen money back?",
+                "choices": [
+                  "The notes tore",
+                  "Education and trust felt worth more than the cash",
+                  "Anil caught him",
+                  "The train was cancelled"
+                ],
+                "answer": 1,
+                "why": "He realises theft would stop him becoming an educated person."
+              },
+              {
+                "prompt": "What does Anil’s silence at the end show?",
+                "choices": [
+                  "He never noticed",
+                  "He knows, and still keeps the trust",
+                  "He calls the police",
+                  "He throws Hari out"
+                ],
+                "answer": 1,
+                "why": "The damp notes are proof, yet Anil makes no accusation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hindi",
+        "name": "Hindi",
+        "blurb": "Verses and prose from Kshitij — meaning and short questions",
+        "hindi": "Hindi",
+        "chapters": [
+          {
+            "id": "kabir",
+            "title": "Kabir — Sakhi",
+            "summary": "Not outer show, but an honest look inward, and the use of criticism.",
+            "formula": "",
+            "points": [
+              "Kabir is a nirguna bhakti poet. Sakhi means a witness — the couplet testifies to experience.",
+              "In “keep the critic close”, the critic is compared to the water of the courtyard. Criticism washes off faults without soap.",
+              "God is not found through costume, pilgrimage, or display. Kabir insists on inner practice and plain speech.",
+              "In an exam, write the meaning in your own words and name the symbol: water = criticism that cleans."
+            ],
+            "questions": [
+              {
+                "prompt": "Kabir is counted with which stream of poetry?",
+                "choices": [
+                  "Saguna Krishna bhakti",
+                  "Nirguna, knowledge-based",
+                  "Riti poetry",
+                  "Chhayavad"
+                ],
+                "answer": 1,
+                "why": "Kabir is a leading poet of the knowledge-based nirguna branch."
+              },
+              {
+                "prompt": "In “keep the critic close”, the critic is compared to what?",
+                "choices": [
+                  "An enemy army",
+                  "Courtyard water",
+                  "Gold",
+                  "A book"
+                ],
+                "answer": 1,
+                "why": "Like water, criticism washes the dirt of faults."
+              },
+              {
+                "prompt": "What does sakhi literally mean?",
+                "choices": [
+                  "War",
+                  "Witness",
+                  "Song",
+                  "Letter"
+                ],
+                "answer": 1,
+                "why": "Sakhi comes from the Sanskrit word for a witness."
+              }
+            ]
+          },
+          {
+            "id": "surdas",
+            "title": "Surdas",
+            "summary": "Parental love and the Bhramargeet — the gopis’ love and complaint to Krishna.",
+            "formula": "",
+            "points": [
+              "Surdas is a devotee of Krishna. His poems hold both the tenderness of child Krishna and the gopis’ separation.",
+              "In the Bhramargeet the gopis reject Uddhav’s message of abstract knowledge. For them, love is greater than nirguna learning.",
+              "The language is Braj. Idiom and dialogue make the poem dramatic. The gopis answer Uddhav with irony.",
+              "When you write the mood, say that Sur’s beauty is sensory — butter, the flute, a mischievous child."
+            ],
+            "questions": [
+              {
+                "prompt": "Surdas mainly writes in which language?",
+                "choices": [
+                  "Khari Boli",
+                  "Braj",
+                  "Awadhi",
+                  "Maithili"
+                ],
+                "answer": 1,
+                "why": "Sur’s poetic language is Braj Bhasha."
+              },
+              {
+                "prompt": "In the Bhramargeet, who do the gopis reproach?",
+                "choices": [
+                  "Kabir",
+                  "Uddhav",
+                  "Rama",
+                  "Tulsidas"
+                ],
+                "answer": 1,
+                "why": "Uddhav brings a message of yoga. The gopis will not leave saguna love."
+              },
+              {
+                "prompt": "What is the main rasa of Sur’s child-Krishna poems?",
+                "choices": [
+                  "Vatsalya, parental tenderness",
+                  "Fear",
+                  "Heroic",
+                  "Fury"
+                ],
+                "answer": 0,
+                "why": "Yashoda and the child are at the centre."
+              }
+            ]
+          },
+          {
+            "id": "netaji",
+            "title": "Netaji’s Glasses",
+            "summary": "Swayam Prakash’s story — the captain who puts glasses on the statue, and a quiet face of patriotism.",
+            "formula": "",
+            "points": [
+              "In a small town, the glasses on the statue of Netaji Subhas Chandra Bose keep getting stolen. Captain Haldar is annoyed every time.",
+              "In the end we learn that a poor patriot called the Captain — described with pearl-like eyes and a disability — is not stealing the glasses. He puts his own glasses on the statue to protect its dignity. Children are part of it too.",
+              "The story makes patriotism a small responsibility, not a speech. The statue is official honour. The glasses are the public looking after it.",
+              "The title is both irony and respect. In an exam, trace how Haldar Sahib’s view changes."
+            ],
+            "questions": [
+              {
+                "prompt": "Whose statue is it?",
+                "choices": [
+                  "Gandhi",
+                  "Netaji Subhas Chandra Bose",
+                  "Bhagat Singh",
+                  "Tilak"
+                ],
+                "answer": 1,
+                "why": "The title and the story centre on Netaji’s statue."
+              },
+              {
+                "prompt": "When the glasses keep vanishing, what does Haldar Sahib feel at first?",
+                "choices": [
+                  "Pride",
+                  "Irritation and surprise",
+                  "Fear",
+                  "Indifference"
+                ],
+                "answer": 1,
+                "why": "He is annoyed at the municipality’s carelessness, and understands the truth later."
+              },
+              {
+                "prompt": "How does the story show patriotism?",
+                "choices": [
+                  "Only as a speech",
+                  "As a quiet duty of ordinary people",
+                  "Only as the army",
+                  "Only as money"
+                ],
+                "answer": 1,
+                "why": "People like the Captain keep the statue’s honour with their own glasses."
+              }
+            ]
+          },
+          {
+            "id": "balgobin",
+            "title": "Balgobin Bhagat",
+            "summary": "Ramvriksh Benipuri’s sketch — a Kabir-panthi farmer who teaches by singing and by how he lives.",
+            "formula": "",
+            "points": [
+              "Balgobin Bhagat is not a trained scholar, but his life is the lesson. He sings Kabir’s verses and farms.",
+              "He is against untouchability and show. At his son’s death he accepts it in Kabir’s spirit instead of a rigid display of grief. That scene is the one to remember.",
+              "In a sketch, an idea becomes visible through a person. The writer praises him without slogans.",
+              "In answers, name his values: work, music, equality, and treating death as natural."
+            ],
+            "questions": [
+              {
+                "prompt": "Whose verses does Balgobin Bhagat sing?",
+                "choices": [
+                  "Surdas",
+                  "Kabir",
+                  "Meera",
+                  "Rahim"
+                ],
+                "answer": 1,
+                "why": "He follows Kabir and sings Kabir’s verses while he farms."
+              },
+              {
+                "prompt": "What kind of writing is this, mainly?",
+                "choices": [
+                  "An epic",
+                  "A character sketch / memoir-like prose",
+                  "A play",
+                  "A news report"
+                ],
+                "answer": 1,
+                "why": "It is Ramvriksh Benipuri’s well-known sketch."
+              },
+              {
+                "prompt": "What does Bhagat’s life teach?",
+                "choices": [
+                  "Wealth is religion",
+                  "A plain working life of values is itself a lesson",
+                  "Study is entirely useless",
+                  "Show is required in grief"
+                ],
+                "answer": 1,
+                "why": "His daily routine becomes the moral lesson."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "12": [
+      {
+        "id": "physics",
+        "name": "Physics",
+        "blurb": "Charge, current, and ray optics",
+        "hindi": "Physics",
+        "stream": "science",
+        "chapters": [
+          {
+            "id": "charges",
+            "title": "Electric Charges and Fields",
+            "summary": "Coulomb's law, the electric field, and quantisation of charge.",
+            "formula": "F = k|q₁q₂|/r²    ·    k = 9 × 10⁹ N m² C⁻²    ·    q = ne",
+            "points": [
+              "Charge is conserved and quantised: q = ne, where e = 1.6 × 10⁻¹⁹ C.",
+              "Like charges repel and unlike charges attract. The force depends on the medium.",
+              "Coulomb's force is an inverse-square law, like Newton's law of gravitation in form, but far stronger, and it can be either attractive or repulsive.",
+              "The electric field at a point is the force on a unit positive test charge: E = F/q. The field of a point charge is kq/r²."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the quantum of charge?",
+                "choices": [
+                  "The mass of a proton",
+                  "e = 1.6 × 10⁻¹⁹ C",
+                  "1 coulomb",
+                  "k"
+                ],
+                "answer": 1,
+                "why": "A free charge occurs in integer multiples of e."
+              },
+              {
+                "prompt": "If the distance between two charges is doubled, what happens to the Coulomb force?",
+                "choices": [
+                  "It doubles",
+                  "It is halved",
+                  "It becomes one-fourth",
+                  "It becomes four times"
+                ],
+                "answer": 2,
+                "why": "The force depends on 1/r², so when r → 2r the force becomes 1/4."
+              },
+              {
+                "prompt": "What is the definition of the electric field?",
+                "choices": [
+                  "E = qF",
+                  "E = F/q",
+                  "E = q/r",
+                  "E = IR"
+                ],
+                "answer": 1,
+                "why": "Force per unit positive charge."
+              }
+            ]
+          },
+          {
+            "id": "current",
+            "title": "Electric Current",
+            "summary": "Drift velocity, Ohm's law, and Kirchhoff's rules.",
+            "formula": "V = IR    ·    ρ = RA/l    ·    Joule heat = I²Rt",
+            "points": [
+              "Free electrons move at random. When an electric field is applied, a small drift velocity is added — that is the current.",
+              "Resistivity is a property of the material. Resistance also depends on the length and cross-sectional area of the wire: R = ρl/A.",
+              "When the temperature rises, the resistivity of metals increases and that of semiconductors decreases.",
+              "Kirchhoff's junction rule is conservation of charge (the algebraic sum of the currents is zero). The loop rule is conservation of energy (the sum of potential differences around a closed loop is zero)."
+            ],
+            "questions": [
+              {
+                "prompt": "If a metal wire's length is doubled and its area is halved, what happens to R?",
+                "choices": [
+                  "It stays the same",
+                  "It doubles",
+                  "It becomes four times",
+                  "It is halved"
+                ],
+                "answer": 2,
+                "why": "R ∝ l/A, so l×2 and A×1/2 make R four times as large."
+              },
+              {
+                "prompt": "Kirchhoff's junction rule is based on the conservation of what?",
+                "choices": [
+                  "Energy",
+                  "Charge",
+                  "Mass",
+                  "Momentum"
+                ],
+                "answer": 1,
+                "why": "Current entering a junction equals current leaving it."
+              },
+              {
+                "prompt": "As the temperature rises, what does the resistance of a metal generally do?",
+                "choices": [
+                  "It decreases",
+                  "It increases",
+                  "It becomes zero",
+                  "It always stays constant"
+                ],
+                "answer": 1,
+                "why": "More collisions in a metal raise its resistivity."
+              }
+            ]
+          },
+          {
+            "id": "optics",
+            "title": "Ray Optics",
+            "summary": "Mirrors, lenses, total internal reflection, and the sign convention.",
+            "formula": "Mirror: 1/v + 1/u = 1/f    ·    Lens: 1/v − 1/u = 1/f    ·    P = 1/f (metre)",
+            "points": [
+              "In the new Cartesian sign convention, the direction of the incident light is taken as positive. The focal length of a concave mirror is written as negative.",
+              "Magnification m = h′/h = −v/u (mirror). A negative magnification means an inverted image.",
+              "Total internal reflection occurs when light travels from a denser to a rarer medium and the angle of incidence is greater than the critical angle. Optical fibres work on this.",
+              "The power of a lens is measured in dioptres, and f must be in metres. The power of a convex lens is positive."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the unit of the power of a lens?",
+                "choices": [
+                  "Metre",
+                  "Dioptre",
+                  "Candela",
+                  "Ohm"
+                ],
+                "answer": 1,
+                "why": "P = 1/f. If f is in metres, the unit is the dioptre."
+              },
+              {
+                "prompt": "For total internal reflection, which way must the light travel?",
+                "choices": [
+                  "Rarer to denser",
+                  "Denser to rarer, with i greater than the critical angle",
+                  "Only through air",
+                  "Only onto a mirror"
+                ],
+                "answer": 1,
+                "why": "Both conditions are required: denser to rarer, and a large enough angle."
+              },
+              {
+                "prompt": "What kind of power does a convex lens have?",
+                "choices": [
+                  "Negative",
+                  "Positive",
+                  "Always zero",
+                  "Infinite"
+                ],
+                "answer": 1,
+                "why": "The focal length and the power of a converging lens are taken as positive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "chemistry",
+        "name": "Chemistry",
+        "blurb": "Solutions, electrochemistry, and kinetics",
+        "hindi": "Chemistry",
+        "stream": "science",
+        "chapters": [
+          {
+            "id": "solutions",
+            "title": "Solutions",
+            "summary": "Molarity, molality, Raoult's law, and colligative properties.",
+            "formula": "Molarity M = moles of solute / litres of solution    ·    Molality m = moles of solute / kg of solvent",
+            "points": [
+              "Molarity can change with temperature because the volume changes. Molality does not depend on temperature.",
+              "Raoult's law: in a solution of volatile liquids, the partial pressure of each component is proportional to its mole fraction.",
+              "Colligative properties depend on the number of particles, not on their identity: relative lowering of vapour pressure, elevation of boiling point, depression of freezing point, and osmotic pressure.",
+              "The van 't Hoff factor i corrects an abnormal molar mass caused by dissociation or association. For NaCl, i is about 2."
+            ],
+            "questions": [
+              {
+                "prompt": "Which concentration does not change when the temperature changes?",
+                "choices": [
+                  "Molarity",
+                  "Molality",
+                  "Normality",
+                  "% w/V"
+                ],
+                "answer": 1,
+                "why": "Molality is based on mass, not on volume."
+              },
+              {
+                "prompt": "What does a colligative property depend on?",
+                "choices": [
+                  "The colour of the solute",
+                  "The number of particles",
+                  "Only the name of the solvent's boiling point",
+                  "The size of the container"
+                ],
+                "answer": 1,
+                "why": "These properties are fixed by how many solute particles there are."
+              },
+              {
+                "prompt": "In an aqueous solution of NaCl, i is approximately what?",
+                "choices": [
+                  "1",
+                  "2",
+                  "0",
+                  "4"
+                ],
+                "answer": 1,
+                "why": "NaCl breaks up almost completely into Na⁺ and Cl⁻."
+              }
+            ]
+          },
+          {
+            "id": "electro",
+            "title": "Electrochemistry",
+            "summary": "Cell potential, the Nernst equation, and Faraday's laws.",
+            "formula": "E = E° − (RT/nF) ln Q    ·    1 F = 96500 C mol⁻¹",
+            "points": [
+              "A galvanic cell turns a spontaneous redox reaction into electrical energy. Oxidation takes place at the anode and reduction at the cathode.",
+              "The potential of the standard hydrogen electrode is taken to be zero. Standard reduction potentials of metals are on this scale.",
+              "The Nernst equation shows how the cell potential changes with concentration. At equilibrium E = 0 and Q = K.",
+              "Faraday's first law: the mass deposited is proportional to the charge passed. m = ZIt."
+            ],
+            "questions": [
+              {
+                "prompt": "What happens at the anode of a galvanic cell?",
+                "choices": [
+                  "Reduction",
+                  "Oxidation",
+                  "Only neutralisation",
+                  "No reaction"
+                ],
+                "answer": 1,
+                "why": "Electrons are released at the anode — that is oxidation."
+              },
+              {
+                "prompt": "Approximately how much charge is 1 faraday?",
+                "choices": [
+                  "1 C",
+                  "96500 C",
+                  "6.02 C",
+                  "8.314 C"
+                ],
+                "answer": 1,
+                "why": "F = Nₐ × e ≈ 96500 C mol⁻¹."
+              },
+              {
+                "prompt": "What is the cell's E at equilibrium?",
+                "choices": [
+                  "E°",
+                  "0",
+                  "Infinity",
+                  "Always 1 V"
+                ],
+                "answer": 1,
+                "why": "At equilibrium the forward and reverse tendencies are equal, so E = 0."
+              }
+            ]
+          },
+          {
+            "id": "kinetics",
+            "title": "Chemical Kinetics",
+            "summary": "Rate law, order, half-life, and the Arrhenius equation.",
+            "formula": "First order: t½ = 0.693/k    ·    k = Ae^(−Ea/RT)",
+            "points": [
+              "The rate of a reaction is the rate at which the concentration of the reactants falls with time. The rate law is fixed by experiment, not by the balanced equation.",
+              "The order is the sum of the powers in the rate law. Molecularity is the number of molecules that collide in a single-step reaction.",
+              "The half-life of a first-order reaction does not depend on concentration. For zero order, the half-life is proportional to the initial concentration.",
+              "Raising the temperature generally increases the rate. The lower the activation energy, the faster the reaction. A catalyst lowers Ea; it does not change the equilibrium constant."
+            ],
+            "questions": [
+              {
+                "prompt": "The half-life of a first-order reaction does not depend on which of these?",
+                "choices": [
+                  "k",
+                  "The initial concentration",
+                  "Temperature at all",
+                  "The rate constant, ever"
+                ],
+                "answer": 1,
+                "why": "t½ = 0.693/k, and [A]₀ is not in it."
+              },
+              {
+                "prompt": "Where is the rate law settled?",
+                "choices": [
+                  "Just by looking at the balanced equation",
+                  "By experiment",
+                  "Only from the colour of the theory",
+                  "From the container"
+                ],
+                "answer": 1,
+                "why": "The powers are experimental. They need not match the stoichiometry."
+              },
+              {
+                "prompt": "What does a catalyst change?",
+                "choices": [
+                  "It lowers the activation energy",
+                  "The identity of the reactants",
+                  "Always the sign of ΔH",
+                  "It raises the equilibrium constant"
+                ],
+                "answer": 0,
+                "why": "A catalyst opens an alternative path. It does not change K."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maths12",
+        "name": "Mathematics",
+        "blurb": "Matrices, differentiability, and probability",
+        "hindi": "Mathematics",
+        "stream": "science",
+        "chapters": [
+          {
+            "id": "matrices",
+            "title": "Matrices",
+            "summary": "Order, multiplication, the transpose, and the condition for an inverse.",
+            "formula": "(AB)ᵀ = Bᵀ Aᵀ    ·    A⁻¹ exists ⇔ |A| ≠ 0",
+            "points": [
+              "An m × n matrix has m rows and n columns. Only matrices of the same order can be added.",
+              "The product AB is possible only when the number of columns of A equals the number of rows of B. In general AB ≠ BA.",
+              "In the transpose, rows become columns. (Aᵀ)ᵀ = A and (A+B)ᵀ = Aᵀ + Bᵀ.",
+              "A square matrix is invertible only when its determinant is not zero. AA⁻¹ = A⁻¹A = I."
+            ],
+            "questions": [
+              {
+                "prompt": "What is (AB)ᵀ equal to?",
+                "choices": [
+                  "Aᵀ Bᵀ",
+                  "Bᵀ Aᵀ",
+                  "AB",
+                  "(BA)ᵀ always, without Aᵀ Bᵀ"
+                ],
+                "answer": 1,
+                "why": "Transpose reverses the order of multiplication."
+              },
+              {
+                "prompt": "When does A⁻¹ exist?",
+                "choices": [
+                  "For every matrix",
+                  "When |A| ≠ 0",
+                  "When |A| = 0",
+                  "Only for a 1 × 2 matrix"
+                ],
+                "answer": 1,
+                "why": "A matrix is invertible only when it is square and the determinant is not zero."
+              },
+              {
+                "prompt": "What order is the product of a 2 × 3 matrix and a 3 × 4 matrix?",
+                "choices": [
+                  "2 × 4",
+                  "3 × 3",
+                  "4 × 2",
+                  "The product is not possible"
+                ],
+                "answer": 0,
+                "why": "The outer orders remain: 2 × 4."
+              }
+            ]
+          },
+          {
+            "id": "continuity",
+            "title": "Continuity and Differentiability",
+            "summary": "Limits, the definition of continuity, and the basic derivatives.",
+            "formula": "f′(x) = lim h→0 [f(x+h) − f(x)] / h",
+            "points": [
+              "Continuity at x = a means lim x→a f(x) exists, f(a) is defined, and the two are equal.",
+              "Every differentiable function is continuous. The converse is not true — |x| is continuous at zero but not differentiable.",
+              "Sums, products, and quotients (when the denominator is not zero) stay continuous. A polynomial is continuous and differentiable everywhere.",
+              "d/dx (xⁿ) = nxⁿ⁻¹, d/dx (sin x) = cos x, d/dx (eˣ) = eˣ. Chain rule: d/dx f(g(x)) = f′(g(x)) · g′(x)."
+            ],
+            "questions": [
+              {
+                "prompt": "What is |x| like at x = 0?",
+                "choices": [
+                  "Both continuous and differentiable",
+                  "Continuous but not differentiable",
+                  "Discontinuous",
+                  "Undefined"
+                ],
+                "answer": 1,
+                "why": "The left- and right-hand derivatives are −1 and +1, so the sharp corner is not differentiable."
+              },
+              {
+                "prompt": "What is d/dx (sin x)?",
+                "choices": [
+                  "−cos x",
+                  "cos x",
+                  "sin x",
+                  "tan x"
+                ],
+                "answer": 1,
+                "why": "The derivative of sine is cosine."
+              },
+              {
+                "prompt": "What does differentiability say about continuity?",
+                "choices": [
+                  "There is no relation",
+                  "Differentiable ⇒ continuous",
+                  "Continuous ⇒ differentiable",
+                  "The two cannot hold together"
+                ],
+                "answer": 1,
+                "why": "Differentiability is the stronger condition, and continuity comes with it."
+              }
+            ]
+          },
+          {
+            "id": "probability",
+            "title": "Probability",
+            "summary": "Conditional probability, independent events, and Bayes.",
+            "formula": "P(A|B) = P(A ∩ B) / P(B)    ·    Independent: P(A ∩ B) = P(A)P(B)",
+            "points": [
+              "If the sample space is a set of equally likely outcomes, P(E) = favourable outcomes / total outcomes.",
+              "The conditional probability P(A|B) requires that B has already occurred. P(B) must not be zero.",
+              "For independent events, one occurring does not change the probability of the other. The intersection is then a simple product.",
+              "Bayes' theorem updates a prior probability with new evidence. The law of total probability first splits the outcome among its causes."
+            ],
+            "questions": [
+              {
+                "prompt": "A fair coin is tossed twice. What is the probability of at least one head?",
+                "choices": [
+                  "1/4",
+                  "1/2",
+                  "3/4",
+                  "1"
+                ],
+                "answer": 2,
+                "why": "The outcomes are HH, HT, TH, TT. Three are favourable. P = 3/4."
+              },
+              {
+                "prompt": "Which is the correct formula for P(A|B)?",
+                "choices": [
+                  "P(A)/P(B)",
+                  "P(A ∩ B)/P(B)",
+                  "P(A)P(B)",
+                  "P(A ∪ B)"
+                ],
+                "answer": 1,
+                "why": "The chance of A inside B."
+              },
+              {
+                "prompt": "For independent events, what is P(A ∩ B)?",
+                "choices": [
+                  "P(A) + P(B)",
+                  "P(A)P(B)",
+                  "Always 0",
+                  "1"
+                ],
+                "answer": 1,
+                "why": "The defining condition of independence is the product."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "biology",
+        "name": "Biology",
+        "blurb": "Reproduction, inheritance, and evolution",
+        "hindi": "Biology",
+        "stream": "science",
+        "chapters": [
+          {
+            "id": "reproduction",
+            "title": "Reproduction in Organisms",
+            "summary": "Asexual and sexual reproduction, and fertilisation in flowering plants.",
+            "formula": "",
+            "points": [
+              "Reproduction keeps a species going. In asexual reproduction one parent produces offspring that are genetically alike, as in fission, budding, and vegetative propagation.",
+              "In sexual reproduction, gametes are formed by meiosis, and fertilisation brings variation.",
+              "In a flower the anther is the male part and the ovary is the female part. After pollination, the pollen tube carries the male gametes into the ovule.",
+              "Double fertilisation is characteristic of angiosperms: one gamete forms the zygote with the egg, and the other forms the endosperm with the polar nuclei."
+            ],
+            "questions": [
+              {
+                "prompt": "In which of these does double fertilisation occur?",
+                "choices": [
+                  "All fungi",
+                  "Angiosperms",
+                  "Only humans",
+                  "Bacteria"
+                ],
+                "answer": 1,
+                "why": "One fertilisation forms the zygote and the other forms the endosperm."
+              },
+              {
+                "prompt": "What are the offspring of asexual reproduction generally like?",
+                "choices": [
+                  "Highly varied",
+                  "Genetically like the parent",
+                  "Always triploid",
+                  "Without DNA"
+                ],
+                "answer": 1,
+                "why": "Mitosis makes a clone, mutations aside."
+              },
+              {
+                "prompt": "Where are pollen grains formed?",
+                "choices": [
+                  "Ovary",
+                  "Anther",
+                  "Stigma",
+                  "Seed"
+                ],
+                "answer": 1,
+                "why": "Pollen grains are formed in the anther of the stamen."
+              }
+            ]
+          },
+          {
+            "id": "inheritance",
+            "title": "Principles of Inheritance",
+            "summary": "Mendel's laws, and the monohybrid and dihybrid ratios.",
+            "formula": "Monohybrid F₂  3 : 1    ·    Dihybrid F₂  9 : 3 : 3 : 1",
+            "points": [
+              "Mendel chose contrasting traits in the pea plant. A dominant trait shows even in the heterozygous state; a recessive trait shows only in the homozygous state.",
+              "The law of segregation: when gametes form, a pair of factors separates. Each gamete receives one factor.",
+              "Independent assortment: the factors of two traits are distributed independently of each other — when the genes are on different chromosomes, or far enough apart.",
+              "In incomplete dominance the F₁ shows an intermediate phenotype, such as the pink flower of snapdragon. The ratio can look like the genotypic 1:2:1."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the phenotypic ratio in the F₂ of a monohybrid cross?",
+                "choices": [
+                  "1 : 2 : 1",
+                  "3 : 1",
+                  "9 : 3 : 3 : 1",
+                  "1 : 1"
+                ],
+                "answer": 1,
+                "why": "Dominant : recessive = 3 : 1. The genotype ratio is 1:2:1."
+              },
+              {
+                "prompt": "When does a recessive trait appear?",
+                "choices": [
+                  "Always in a heterozygote",
+                  "Only in a homozygous recessive",
+                  "Every time, and only in the F₁",
+                  "Never"
+                ],
+                "answer": 1,
+                "why": "The phenotype appears only when both alleles are recessive."
+              },
+              {
+                "prompt": "What is the phenotypic ratio of a dihybrid F₂?",
+                "choices": [
+                  "3 : 1",
+                  "1 : 1",
+                  "9 : 3 : 3 : 1",
+                  "2 : 1"
+                ],
+                "answer": 2,
+                "why": "Independent assortment gives four phenotypic classes in this ratio."
+              }
+            ]
+          },
+          {
+            "id": "evolution",
+            "title": "Evolution",
+            "summary": "Natural selection, homologous organs, and the origin of species.",
+            "formula": "",
+            "points": [
+              "According to Darwin, the fitter organisms leave more offspring. Heritable variation and selection together increase adaptation.",
+              "Homologous organs show a shared ancestry; the function may differ — for example the human arm and a whale's flipper. Analogous organs match in function, not in origin, such as the wings of an insect and a bird.",
+              "Fossils, comparative anatomy, and molecular similarities support a common ancestor.",
+              "In artificial selection, humans do the choosing, as when many vegetables were bred from wild cabbage. In natural selection, the environment does the choosing."
+            ],
+            "questions": [
+              {
+                "prompt": "The human arm and a bat's wing are examples of what?",
+                "choices": [
+                  "Analogous organs",
+                  "Homologous organs",
+                  "Never vestigial",
+                  "Only fossils"
+                ],
+                "answer": 1,
+                "why": "The basic plan of the bones is the same; the function is different."
+              },
+              {
+                "prompt": "In natural selection, who does the selecting?",
+                "choices": [
+                  "Only humans",
+                  "Environmental pressure",
+                  "Chance alone, with no variation",
+                  "Only fossils"
+                ],
+                "answer": 1,
+                "why": "A variation that helps in that environment becomes more common."
+              },
+              {
+                "prompt": "What kind of organs are the wings of an insect and a bird?",
+                "choices": [
+                  "Homologous",
+                  "Analogous",
+                  "Both vestigial",
+                  "Hormones"
+                ],
+                "answer": 1,
+                "why": "The job of flight is the same; the origin of the structure is different."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "accountancy",
+        "name": "Accountancy",
+        "blurb": "Partnership, shares, and cash flow",
+        "hindi": "Accountancy",
+        "stream": "commerce",
+        "chapters": [
+          {
+            "id": "partnership",
+            "title": "Partnership Accounts",
+            "summary": "Capital, sharing of profit and loss, and the idea of goodwill.",
+            "formula": "",
+            "points": [
+              "In a partnership, people agree to run a business and share the profit. If there is no agreement, profits are shared equally, even when the capitals differ.",
+              "A partner's capital account is kept by the fixed or the fluctuating method. Under the fixed method, capital stays unchanged and adjustments go to the current account.",
+              "Interest, salary, and commission are appropriations of profit. They are shared out through the profit and loss appropriation account.",
+              "Goodwill is the value of the firm's surplus earning power. When a partner is admitted or retires, goodwill is adjusted through the sacrificing ratio and the gaining ratio."
+            ],
+            "questions": [
+              {
+                "prompt": "If there is no agreement, in what ratio is profit shared?",
+                "choices": [
+                  "The capital ratio",
+                  "Equally",
+                  "The age ratio",
+                  "Only the active partner"
+                ],
+                "answer": 1,
+                "why": "Under the Indian Partnership Act, sharing is equal when there is no agreement."
+              },
+              {
+                "prompt": "Where is a partner's salary debited?",
+                "choices": [
+                  "Trading account",
+                  "Profit and loss appropriation account",
+                  "Cash flow",
+                  "Always the revaluation account"
+                ],
+                "answer": 1,
+                "why": "Salary is a sharing of profit, not an expense in the trading account."
+              },
+              {
+                "prompt": "What does goodwill mainly measure?",
+                "choices": [
+                  "The cash balance",
+                  "The value of surplus future earnings",
+                  "Only the furniture",
+                  "The tax rate"
+                ],
+                "answer": 1,
+                "why": "The power to earn above a normal profit."
+              }
+            ]
+          },
+          {
+            "id": "shares",
+            "title": "Company Shares",
+            "summary": "Issue of shares, premium, and the basics of forfeiture.",
+            "formula": "",
+            "points": [
+              "A share is a unit of a company's capital. Equity shareholders bear the final risk, and the dividend rate is not fixed. Preference shares carry a fixed rate.",
+              "Shares may be issued at par, at a premium, or (where it is allowed) at a discount. Securities premium goes to a separate account, and its uses are limited.",
+              "The money is usually called in application, allotment, and calls. Excess application money is adjusted against allotment or refunded.",
+              "Shares may be forfeited if a called amount is not paid. Once the shares are reissued, the amount forfeited has the nature of a capital reserve."
+            ],
+            "questions": [
+              {
+                "prompt": "What kind of item is securities premium?",
+                "choices": [
+                  "Revenue income to be shared out directly as dividend",
+                  "A capital receipt, with limited uses",
+                  "Salary payable",
+                  "Depreciation"
+                ],
+                "answer": 1,
+                "why": "Premium is like a capital reserve, not a trading profit."
+              },
+              {
+                "prompt": "Which of these is true of an equity shareholder?",
+                "choices": [
+                  "The dividend is always fixed",
+                  "A residual claimant, with a variable dividend",
+                  "A lender",
+                  "Preference only"
+                ],
+                "answer": 1,
+                "why": "Equity holders are owners. The rate is not fixed."
+              },
+              {
+                "prompt": "What is the usual treatment of extra money received on application?",
+                "choices": [
+                  "Add it to goodwill",
+                  "Adjust it against allotment, or refund it",
+                  "Charge depreciation",
+                  "Treat it as salary"
+                ],
+                "answer": 1,
+                "why": "Excess application money is adjusted with allotment, or it is returned."
+              }
+            ]
+          },
+          {
+            "id": "cashflow",
+            "title": "Cash Flow Statement",
+            "summary": "Operating, investing, and financing activities.",
+            "formula": "",
+            "points": [
+              "A cash flow statement shows where cash came from and where it went. Profit and cash are not the same thing.",
+              "Operating activities come from the main business: receipts from customers, payments to suppliers, and wages.",
+              "Investing activities include buying and selling fixed assets and investments. Buying a machine is a cash outflow.",
+              "In financing, issuing shares or debt is an inflow; dividends and repayment of debt are outflows. In the indirect method, non-cash items such as depreciation are added back to net profit."
+            ],
+            "questions": [
+              {
+                "prompt": "The purchase of machinery falls under which activity?",
+                "choices": [
+                  "Operating",
+                  "Investing",
+                  "Financing",
+                  "Only the profit and loss account"
+                ],
+                "answer": 1,
+                "why": "Buying a long-term asset is an investing activity."
+              },
+              {
+                "prompt": "In the indirect method of a cash flow statement, what is done with depreciation?",
+                "choices": [
+                  "It is subtracted from profit a second time",
+                  "It is added back to net profit",
+                  "It is ignored because it is cash",
+                  "Only in the balance sheet"
+                ],
+                "answer": 1,
+                "why": "Depreciation is a non-cash expense, so it is added to arrive at cash from operations."
+              },
+              {
+                "prompt": "The issue of share capital belongs to which class?",
+                "choices": [
+                  "Operating",
+                  "Investing",
+                  "Financing",
+                  "Goodwill"
+                ],
+                "answer": 2,
+                "why": "Raising money from the owners is financing."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "business",
+        "name": "Business Studies",
+        "blurb": "Management, marketing, and finance",
+        "hindi": "Business Studies",
+        "stream": "commerce",
+        "chapters": [
+          {
+            "id": "management",
+            "title": "Nature of Management",
+            "summary": "Effectiveness, efficiency, and the levels of management.",
+            "formula": "",
+            "points": [
+              "Management is the process of getting work done through others in order to reach goals. Effectiveness is doing the right work on time; efficiency is doing it at a lower cost.",
+              "Management is both an art and a science, and it is on the way to becoming a profession. The principles can be taught, but skill is sharpened by practice.",
+              "The top level makes policy, the middle level breaks it down across departments, and the supervisory level looks after the daily work with employees.",
+              "Coordination is the essence of management. It is not a separate function. It is the thread running through every function, from planning to controlling."
+            ],
+            "questions": [
+              {
+                "prompt": "What is reaching a goal with fewer resources called?",
+                "choices": [
+                  "Effectiveness alone",
+                  "Efficiency",
+                  "A lack of coordination",
+                  "Not controlling"
+                ],
+                "answer": 1,
+                "why": "Efficiency is the economical use of cost and resources."
+              },
+              {
+                "prompt": "Making policy is mainly the work of which level?",
+                "choices": [
+                  "Supervisory",
+                  "Top",
+                  "Only the workers",
+                  "The customer"
+                ],
+                "answer": 1,
+                "why": "The board and the chief managers make the broad plans."
+              },
+              {
+                "prompt": "What is coordination taken to be?",
+                "choices": [
+                  "Only the last step",
+                  "The essence of management, present in every function",
+                  "Only an accounts job",
+                  "A market survey"
+                ],
+                "answer": 1,
+                "why": "Without coordination, departments start off in different directions."
+              }
+            ]
+          },
+          {
+            "id": "marketing",
+            "title": "Marketing Management",
+            "summary": "The four parts of the marketing mix, and the brand.",
+            "formula": "4P: Product, Price, Place, Promotion",
+            "points": [
+              "Marketing is not only selling. It runs from spotting a need through to satisfaction. Selling puts the stress on making something first and then selling it.",
+              "A product includes features, quality, packaging, and the brand. Price depends on cost, competition, and what the customer is willing to pay.",
+              "Place is the channel of distribution — the product in the right place at the right time. Promotion carries the message through advertising, sales promotion, and public relations.",
+              "A brand name builds recognition. Good branding gives the power to set a price; it is not only a logo."
+            ],
+            "questions": [
+              {
+                "prompt": "What does Place in the marketing mix mean?",
+                "choices": [
+                  "Only decorating the office",
+                  "Distribution and availability",
+                  "Nothing but a cut in the price",
+                  "Recruitment"
+                ],
+                "answer": 1,
+                "why": "Place is the channel by which goods reach the customer."
+              },
+              {
+                "prompt": "What is the main difference between selling and marketing?",
+                "choices": [
+                  "There is no difference",
+                  "Marketing starts from a need; selling starts from the goods",
+                  "Selling is only ever a long-term plan",
+                  "Marketing has no price"
+                ],
+                "answer": 1,
+                "why": "Marketing starts from the customer's need."
+              },
+              {
+                "prompt": "What does promotion include?",
+                "choices": [
+                  "Only carrying the goods",
+                  "Advertising and sales promotion",
+                  "Only salary",
+                  "An audit"
+                ],
+                "answer": 1,
+                "why": "Promotion is the communication mix."
+              }
+            ]
+          },
+          {
+            "id": "finance",
+            "title": "Financial Management",
+            "summary": "Where to raise money and where to put it — capital structure.",
+            "formula": "",
+            "points": [
+              "The aim of financial management is to increase the owners' wealth, not merely the profit figure.",
+              "The investment decision is about putting money into fixed assets. The financing decision is about the mix of debt and owners' capital.",
+              "The dividend decision settles whether profit is distributed or kept in the business.",
+              "Debt can work out cheaper because interest is tax-deductible, but too much debt raises financial risk. An optimal capital structure balances the two."
+            ],
+            "questions": [
+              {
+                "prompt": "Buying a fixed asset is which decision?",
+                "choices": [
+                  "Dividend",
+                  "Investment / capital budgeting",
+                  "Staffing alone",
+                  "Promotion"
+                ],
+                "answer": 1,
+                "why": "The use of long-term funds is an investment decision."
+              },
+              {
+                "prompt": "The tax deductibility of interest often makes debt what?",
+                "choices": [
+                  "Always a loss",
+                  "A cheaper source than owners' capital",
+                  "Illegal",
+                  "Not merely an item in the trading account"
+                ],
+                "answer": 1,
+                "why": "The tax shield lowers the effective cost of debt."
+              },
+              {
+                "prompt": "What does the dividend decision divide?",
+                "choices": [
+                  "Assets between debtors and creditors",
+                  "Profit into distribution and retention",
+                  "Only salary",
+                  "Only tax"
+                ],
+                "answer": 1,
+                "why": "How much to pay out, and how much to reinvest."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "economics",
+        "name": "Economics",
+        "blurb": "National income, money, and the budget",
+        "hindi": "Economics",
+        "stream": "commerce",
+        "chapters": [
+          {
+            "id": "income",
+            "title": "National Income",
+            "summary": "GDP, the methods, and real versus nominal income.",
+            "formula": "GDP at MP = C + I + G + (X − M)",
+            "points": [
+              "Gross domestic product is the market value of the final goods and services produced inside a country's domestic territory in one year. Intermediate goods are left out, so they are not counted twice.",
+              "There are three methods: product, income, and expenditure. If nothing is counted twice, the three should agree.",
+              "Nominal GDP is at current prices. Real GDP is at the constant prices of a base year, so it shows only the change in quantity.",
+              "Unpaid work done at home, and damage to the environment, do not show up fully in GDP. It is an incomplete measure of welfare."
+            ],
+            "questions": [
+              {
+                "prompt": "Real GDP is measured at which prices?",
+                "choices": [
+                  "The current year",
+                  "The constant prices of the base year",
+                  "Dollars only",
+                  "Wholesale only"
+                ],
+                "answer": 1,
+                "why": "The change in prices is removed so that the quantity of output can be seen."
+              },
+              {
+                "prompt": "Why are intermediate goods not added separately in GDP?",
+                "choices": [
+                  "They are always imports",
+                  "To avoid counting them twice",
+                  "Their value is zero",
+                  "The law forbids them by name"
+                ],
+                "answer": 1,
+                "why": "Their value is already inside the final good."
+              },
+              {
+                "prompt": "Which sum is the right one for the expenditure method?",
+                "choices": [
+                  "Wages only",
+                  "C + I + G + (X − M)",
+                  "Tax only",
+                  "Exports only"
+                ],
+                "answer": 1,
+                "why": "Consumption, investment, government spending, and net exports."
+              }
+            ]
+          },
+          {
+            "id": "money-banking",
+            "title": "Money and Banking",
+            "summary": "The functions of money, and the central bank's control of credit.",
+            "formula": "",
+            "points": [
+              "Money is a medium of exchange, a unit of account, a standard of deferred payment, and a store of value.",
+              "Commercial banks accept demand deposits and create credit money by making loans. The lower the reserve ratio, the more room there is to create credit.",
+              "The central bank issues notes, is the government's banker, and is the lender of last resort.",
+              "The repo rate, the cash reserve ratio, and open-market operations make credit cheaper or dearer. In a time of inflation, credit has to be tightened."
+            ],
+            "questions": [
+              {
+                "prompt": "Whose job is the control of credit, mainly?",
+                "choices": [
+                  "Any trader",
+                  "The central bank",
+                  "The family alone",
+                  "A stockbroker"
+                ],
+                "answer": 1,
+                "why": "A central bank such as the RBI works the monetary instruments."
+              },
+              {
+                "prompt": "A bank keeps part of its deposits as cash and lends the rest. What is this called?",
+                "choices": [
+                  "Barter",
+                  "Credit creation",
+                  "A budget deficit",
+                  "Depreciation"
+                ],
+                "answer": 1,
+                "why": "Fractional reserves create new deposits."
+              },
+              {
+                "prompt": "To check inflation, what does a central bank usually do?",
+                "choices": [
+                  "Cuts the repo rate sharply",
+                  "Makes credit dearer and tighter",
+                  "Sets the reserve ratio to zero",
+                  "Prints notes without a limit"
+                ],
+                "answer": 1,
+                "why": "Dearer credit cools demand and spending."
+              }
+            ]
+          },
+          {
+            "id": "budget",
+            "title": "The Government Budget",
+            "summary": "Revenue and capital items, and the kinds of deficit.",
+            "formula": "",
+            "points": [
+              "The budget is a statement of the government's receipts and expenditure for the coming year. The revenue budget covers regular items; the capital budget changes assets and liabilities.",
+              "Tax revenue splits into direct tax (income tax) and indirect tax (such as GST). Borrowing is a capital receipt, not a revenue receipt.",
+              "Revenue deficit = revenue expenditure − revenue receipts. The fiscal deficit is total expenditure minus total receipts, leaving borrowings out.",
+              "A large fiscal deficit lays a burden of interest on the future. It matters whether spending is unproductive or spent on development."
+            ],
+            "questions": [
+              {
+                "prompt": "Government borrowing is counted as which of these?",
+                "choices": [
+                  "A revenue receipt",
+                  "A capital receipt",
+                  "Revenue expenditure",
+                  "Planned depreciation"
+                ],
+                "answer": 1,
+                "why": "Borrowing increases liabilities, so it is a capital receipt."
+              },
+              {
+                "prompt": "What is a revenue deficit?",
+                "choices": [
+                  "Total borrowing",
+                  "Revenue expenditure in excess of revenue receipts",
+                  "GST alone",
+                  "Exports − imports"
+                ],
+                "answer": 1,
+                "why": "There is a revenue deficit when regular spending exceeds regular income."
+              },
+              {
+                "prompt": "What kind of tax is income tax?",
+                "choices": [
+                  "Indirect",
+                  "Direct",
+                  "Capital expenditure",
+                  "Never a fee"
+                ],
+                "answer": 1,
+                "why": "The person on whom the tax is levied is the one who pays it — a direct tax."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "history",
+        "name": "History",
+        "blurb": "Harappa, the mahajanapadas, and the Gandhi years",
+        "hindi": "History",
+        "stream": "arts",
+        "chapters": [
+          {
+            "id": "harappa",
+            "title": "The Harappan Civilisation",
+            "summary": "Town planning, seals, and a wide Bronze Age world.",
+            "formula": "",
+            "points": [
+              "The Indus, or Harappan, civilisation was in its mature form around 2600–1900 BCE. Mohenjodaro and Harappa were planned cities.",
+              "Streets lay on a grid, drains were of baked brick, and the Great Bath shows public management of water. The citadel and the lower town often stand apart.",
+              "Steatite seals, the one-horned animal, and decorated beads are evidence of trade over long distances. The script still has not been read in full.",
+              "Shifting rivers, climate, and a weakening trade network are all discussed as reasons for the decline. No single cause is thought to be enough."
+            ],
+            "questions": [
+              {
+                "prompt": "What is a distinctive mark of the mature Harappan towns?",
+                "choices": [
+                  "Wooden forts alone",
+                  "Grid streets and drains",
+                  "An iron railway",
+                  "Paper money"
+                ],
+                "answer": 1,
+                "why": "Baked brick and drainage are a famous feature of this civilisation."
+              },
+              {
+                "prompt": "What is the standing of the Harappan script?",
+                "choices": [
+                  "It has been read in full",
+                  "It still has not been read beyond dispute",
+                  "It is Devanagari",
+                  "It was only spoken"
+                ],
+                "answer": 1,
+                "why": "The seals carry short inscriptions, and there is no agreement on the meaning."
+              },
+              {
+                "prompt": "The Great Bath is linked with which site?",
+                "choices": [
+                  "Mohenjodaro",
+                  "Sarnath",
+                  "Hampi",
+                  "Panipat"
+                ],
+                "answer": 0,
+                "why": "The Great Bath at Mohenjodaro is the textbook's central example."
+              }
+            ]
+          },
+          {
+            "id": "kings",
+            "title": "Kings, Farmers, and Towns",
+            "summary": "The mahajanapadas, the rise of Magadha, and inscriptions as sources.",
+            "formula": "",
+            "points": [
+              "Mahajanapadas arose in the sixth century BCE. There were both monarchies and ganasanghas. An agricultural surplus was needed for tax and for an army.",
+              "Magadha grew strong because fertile land, iron, forest elephants, and river routes came together. Rajagriha, and later Pataliputra, became the capital.",
+              "Inscriptions, coins, and Buddhist and Jain texts are sources for this period. Ashoka's rock edicts are in Prakrit, and they set out a policy of dhamma.",
+              "Towns flourished along trade routes in the second wave of urbanisation. Shrenis were organisations of craftspeople."
+            ],
+            "questions": [
+              {
+                "prompt": "Which place is taken to be the early capital of Magadha?",
+                "choices": [
+                  "Delhi",
+                  "Rajagriha",
+                  "Calcutta",
+                  "Udaipur"
+                ],
+                "answer": 1,
+                "why": "Rajagriha was protected by the hills. Pataliputra rose later."
+              },
+              {
+                "prompt": "Most of Ashoka's edicts are in which language and script?",
+                "choices": [
+                  "English",
+                  "Prakrit, in the Brahmi script",
+                  "Persian only",
+                  "Tamil only, everywhere"
+                ],
+                "answer": 1,
+                "why": "Prakrit written in Brahmi carried the message in the language of the people."
+              },
+              {
+                "prompt": "In the mahajanapada period, what did tax rest on mainly?",
+                "choices": [
+                  "Marine insurance alone",
+                  "The agricultural surplus",
+                  "Paper notes",
+                  "Railway fares"
+                ],
+                "answer": 1,
+                "why": "A surplus from farming is what made the state possible."
+              }
+            ]
+          },
+          {
+            "id": "gandhi",
+            "title": "Mahatma Gandhi and the National Movement",
+            "summary": "The strategy of a mass movement: truth, non-violence, and wide participation.",
+            "formula": "",
+            "points": [
+              "Gandhi returned to India in 1915. Local struggles such as Champaran and Kheda connected him with farmers.",
+              "Non-cooperation and civil disobedience carried the movement from the educated people in the cities out to the villages and to women. Salt was an everyday thing, which is why the Dandi March made sense.",
+              "Non-violence was discipline, not weakness. When violence broke out he would stop the movement, as he did after Chauri Chaura.",
+              "The Quit India Movement of 1942 demanded independence at once. As sources, newspapers, speeches, and government reports all have to be read — one side is not the whole truth."
+            ],
+            "questions": [
+              {
+                "prompt": "What was the symbolic issue of the Dandi March?",
+                "choices": [
+                  "Railway fares",
+                  "The salt tax",
+                  "Foreign post alone",
+                  "University fees"
+                ],
+                "answer": 1,
+                "why": "The monopoly and the tax on salt were tied to a poor household's kitchen."
+              },
+              {
+                "prompt": "What did Gandhi do after Chauri Chaura?",
+                "choices": [
+                  "He raised an army",
+                  "He called off the Non-Cooperation Movement",
+                  "He began Quit India the same day",
+                  "Nothing"
+                ],
+                "answer": 1,
+                "why": "Violence went against his discipline, so the movement was stopped."
+              },
+              {
+                "prompt": "What was the Champaran struggle linked to?",
+                "choices": [
+                  "Indigo farmers",
+                  "Cloth-mill owners alone",
+                  "The naval mutiny",
+                  "The Constituent Assembly"
+                ],
+                "answer": 0,
+                "why": "The Champaran satyagraha of 1917 was for the indigo farmers."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "political",
+        "name": "Political Science",
+        "blurb": "Nation-building, the Cold War, and democracy",
+        "hindi": "Political Science",
+        "stream": "arts",
+        "chapters": [
+          {
+            "id": "nation",
+            "title": "The Challenges of Nation-Building",
+            "summary": "Partition, the accession of the princely states, and the reorganisation of states.",
+            "formula": "",
+            "points": [
+              "The Partition of 1947 was not only a border. Millions of people were displaced, and communal violence shook the new states.",
+              "Bringing hundreds of princely states into India was the diplomatic work of Sardar Patel and V.P. Menon. Hyderabad and Junagadh were difficult cases.",
+              "A demand grew for states on the basis of language. Around 1956, the reorganisation of states gave linguistic identity a place on the administrative map, while the worry about national unity remained.",
+              "Nation-building is not a one-time event. Giving diversity a place inside democratic institutions is a continuing process."
+            ],
+            "questions": [
+              {
+                "prompt": "Who is given the central role in the integration of the princely states?",
+                "choices": [
+                  "The British monarch alone",
+                  "Sardar Patel",
+                  "The United Nations alone",
+                  "The courts alone"
+                ],
+                "answer": 1,
+                "why": "As Home Minister, Patel ran the campaign of instruments of accession."
+              },
+              {
+                "prompt": "What became a major basis for reorganising the states in the 1950s?",
+                "choices": [
+                  "River valleys alone",
+                  "Language",
+                  "Only making the areas equal",
+                  "Distance from the sea"
+                ],
+                "answer": 1,
+                "why": "Linguistic identity became a political demand, and a reorganisation commission was set up."
+              },
+              {
+                "prompt": "What was the immediate human result of Partition?",
+                "choices": [
+                  "No migration at all",
+                  "Mass displacement and violence",
+                  "The immediate end of one party across the world",
+                  "Only a trade agreement"
+                ],
+                "answer": 1,
+                "why": "There were refugees and riots on both sides of the border."
+              }
+            ]
+          },
+          {
+            "id": "cold-war",
+            "title": "The Cold War Era",
+            "summary": "Two blocs, non-alignment, and crises that stayed dangerous without becoming a war.",
+            "formula": "",
+            "points": [
+              "The Cold War was a contest of ideology, weapons, and influence between the United States and the Soviet Union. In place of a direct world war there were regional conflicts and alliances.",
+              "NATO and the Warsaw Pact became two military blocs. Nuclear weapons made an all-out war suicidal — a balance of terror.",
+              "India played an active part in the Non-Aligned Movement: an independent foreign policy without joining any military bloc.",
+              "The Cuban Missile Crisis shows that diplomacy can pull a crisis back. The Cold War is taken to have ended, in its structure, with the breakup of the Soviet Union in 1991."
+            ],
+            "questions": [
+              {
+                "prompt": "Who were the two main poles of the Cold War?",
+                "choices": [
+                  "India and China",
+                  "The United States and the Soviet Union",
+                  "Britain and France only",
+                  "Japan and Korea"
+                ],
+                "answer": 1,
+                "why": "The capitalist and the socialist superpowers."
+              },
+              {
+                "prompt": "What does non-alignment mean?",
+                "choices": [
+                  "Not speaking to any country",
+                  "An independent policy, without joining a military bloc",
+                  "Quietly a member of only one bloc",
+                  "Refusing disarmament"
+                ],
+                "answer": 1,
+                "why": "NAM members kept relations with both blocs and refused to be tied to a camp."
+              },
+              {
+                "prompt": "What did nuclear weapons make an all-out war?",
+                "choices": [
+                  "Cheap and ordinary",
+                  "Suicidal, and so something to avoid in a direct clash",
+                  "Technically impossible to build",
+                  "Only a subject for the navy"
+                ],
+                "answer": 1,
+                "why": "The fear of mutual destruction stopped a direct war. It did not stop the tension."
+              }
+            ]
+          },
+          {
+            "id": "parties",
+            "title": "The Party System and Democracy",
+            "summary": "From one-party dominance to the era of coalitions.",
+            "formula": "",
+            "points": [
+              "For several decades after independence the Congress stayed dominant, yet the opposition kept contesting elections. This is called one-party dominance, not a one-party dictatorship.",
+              "After 1967, defeats for the Congress in many states showed that there was real competition. The election of 1977 became a symbol of democracy returning after the Emergency.",
+              "After 1989, coalition politics became usual. Regional parties became the key to forming a national government.",
+              "Parties give social divisions a voice. The strains are dynasty, the power of money, and defection. Strong internal democracy is what makes a party trustworthy in a democracy."
+            ],
+            "questions": [
+              {
+                "prompt": "What is the difference between one-party dominance and a one-party system?",
+                "choices": [
+                  "No difference",
+                  "Under dominance, the opposition can contest elections",
+                  "Under dominance, no elections are held",
+                  "In a one-party system many parties are equal"
+                ],
+                "answer": 1,
+                "why": "In the Congress years a legal opposition existed, even though it kept losing."
+              },
+              {
+                "prompt": "What marks the coalition era?",
+                "choices": [
+                  "One party's permanent two-thirds majority, with no partner",
+                  "No single party holding a clear majority, and partners instead",
+                  "Rule by the army",
+                  "A ban on parties"
+                ],
+                "answer": 1,
+                "why": "After 1989 many national governments have been coalitions."
+              },
+              {
+                "prompt": "The 1977 election is remembered mainly as coming after what?",
+                "choices": [
+                  "The Green Revolution alone",
+                  "The Emergency",
+                  "The start of the Cold War",
+                  "The First Five-Year Plan"
+                ],
+                "answer": 1,
+                "why": "After the Emergency ended, voters changed the government."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "geography",
+        "name": "Geography",
+        "blurb": "Human geography, population, and land",
+        "hindi": "Geography",
+        "stream": "arts",
+        "chapters": [
+          {
+            "id": "human",
+            "title": "Human Geography",
+            "summary": "The link between nature and society — from determinism to possibilism.",
+            "formula": "",
+            "points": [
+              "Human geography studies how human societies and the earth's surface shape each other. Places are not just dots on a map. They are a web of relationships.",
+              "Environmental determinism says that nature shapes people. Possibilism says that nature offers chances, and that technology and culture make the choice.",
+              "Neo-determinism is the middle path: develop, but without breaking nature's limits. Stopping at a red light is the metaphor for it.",
+              "The branches of human geography run through population, settlement, resources, and political geography. Statistics and fieldwork are both sources."
+            ],
+            "questions": [
+              {
+                "prompt": "What does possibilism hold?",
+                "choices": [
+                  "People are merely puppets of nature",
+                  "Nature offers possibilities, and people choose",
+                  "Geography is only rock",
+                  "Technology is useless"
+                ],
+                "answer": 1,
+                "why": "In the Vidalian tradition the environment is both a limit and an opportunity."
+              },
+              {
+                "prompt": "What is the metaphor for neo-determinism?",
+                "choices": [
+                  "An open road with no rules",
+                  "A traffic light — stop, then go",
+                  "A desert alone",
+                  "Mining without limit"
+                ],
+                "answer": 1,
+                "why": "Griffith Taylor's way: balanced development inside nature's limits."
+              },
+              {
+                "prompt": "What sits at the centre of human geography?",
+                "choices": [
+                  "A list of minerals alone",
+                  "The relationship between people and the earth",
+                  "Nautical miles alone",
+                  "A weather instrument alone"
+                ],
+                "answer": 1,
+                "why": "Where a society settled, and why in this way — that is the question."
+              }
+            ]
+          },
+          {
+            "id": "population",
+            "title": "Population",
+            "summary": "Density, growth, and the demographic transition.",
+            "formula": "",
+            "points": [
+              "Density is the number of people per unit of area. Density in India is high, but the spread is uneven — the plains are crowded, and deserts and mountains are sparse.",
+              "Growth is the result of births, deaths, and migration. Natural growth = birth rate − death rate.",
+              "In the demographic transition the death rate falls first and the population grows quickly; then, as the birth rate falls, growth slows.",
+              "A large share of people of working age can be a demographic dividend, if education and jobs come with it. Otherwise it becomes a burden."
+            ],
+            "questions": [
+              {
+                "prompt": "What does population density measure?",
+                "choices": [
+                  "Total exports",
+                  "People per unit of area",
+                  "The birth rate alone",
+                  "The number of cities"
+                ],
+                "answer": 1,
+                "why": "People divided by area."
+              },
+              {
+                "prompt": "How is the rate of natural growth found?",
+                "choices": [
+                  "Birth rate − death rate",
+                  "Migration alone",
+                  "Density × area",
+                  "Imports − exports"
+                ],
+                "answer": 0,
+                "why": "Migration is a separate part. Natural growth is the gap between births and deaths."
+              },
+              {
+                "prompt": "When does the demographic dividend become a benefit?",
+                "choices": [
+                  "When people of working age get skills and work",
+                  "When schools are shut",
+                  "When only the birth rate rises, and there are no jobs",
+                  "When density is zero"
+                ],
+                "answer": 1,
+                "why": "The age structure is an opportunity. It is not a job by itself."
+              }
+            ]
+          },
+          {
+            "id": "land",
+            "title": "Land Resources",
+            "summary": "Land use, degradation, and conservation.",
+            "formula": "",
+            "points": [
+              "Land is limited. In India the plains, the plateaus, and the mountains offer different uses. Net sown area and forest area are major figures for policy.",
+              "Land is degraded by cutting forests, overgrazing, too many chemicals, erosion by water and wind, and mining.",
+              "Conservation includes contour ploughing, terracing, shelter belts, social forestry, and watershed management.",
+              "Changing how land is used is part of development, but paving fertile farmland without a plan runs into food security."
+            ],
+            "questions": [
+              {
+                "prompt": "What is contour ploughing used for?",
+                "choices": [
+                  "Aircraft",
+                  "Reducing soil erosion on a slope",
+                  "Founding a city",
+                  "Fish farming only"
+                ],
+                "answer": 1,
+                "why": "Ploughing across the slope slows the water down."
+              },
+              {
+                "prompt": "What is the usual result of overgrazing?",
+                "choices": [
+                  "Soil and vegetation are degraded",
+                  "More forest at once",
+                  "Groundwater rising by itself",
+                  "No effect at all"
+                ],
+                "answer": 0,
+                "why": "Grazing faster than the plants can regrow strips the cover away."
+              },
+              {
+                "prompt": "Why is land called a limited resource?",
+                "choices": [
+                  "It cannot really be imported, and the area is fixed",
+                  "It is infinite",
+                  "It exists only in deserts",
+                  "It is never used"
+                ],
+                "answer": 0,
+                "why": "A country's geographical area is nearly fixed, while the demand for it grows."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
